@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shop Giay The Thao</title>
+  <link href="img/38208510_1455492401263014_7409691791105982464_n - Copy.png" rel="shortcut icon"/>
+  <link href="shopgiaythethao.css" rel="stylesheet"/>
+   <script language="javascript" src="shopgiaythethao.js"></script>
+</head>
+
+<body>	
+<div class="noidung">
+<div class="nd">
+    <div class="contener">
+        
+        <div class="logo">
+          <img src="img/logo.png" rel="Weichien" />
+        </div>
+    </div>
+    <div class="menu">
+         <ul>
+            <li> <a href="trangchu.html" >Trang chủ</a></li>
+            <li class="submenu"> <a href="#">Menu</a>
+                   <ul class="subcontent">
+                         
+                         <li> <a href="html/banhngot.html">Giày nam</a></li>
+                         <li> <a href="html/nuocep.html">Giày nữ</a></li>
+                         <li> <a href="html/dacbiet.html">Giày trẻ em</a></li>
+                   </ul>
+             </li>
+            <li> <a href="html/gioithieu.html">Giới thiệu</a></li>
+            <li> <a href="html/lienhe.html">Liên hệ</a></li>
+      <div class="search" ><li ><a href="#"><img src="img/38241933_1455652404580347_4643813219910025216_n.png" alt="search"/></a></li></div> 
+         </ul>
+    </div>
+  
+</div>
+	
+
+ <!-- chạy ảnh -->
+    <div class="advertisement">
+			<div class="slideshow-container col-2">
+				<div class="showoff">
+					<img src="img/giay/poster5.jpg" alt="trend"/>
+				</div>
+				<div class="showoff hide-first">
+					<img src="img/giay/poster6.jpg" alt="trend"/>
+				</div>
+				<div class="showoff hide-first">
+					<img src="img/giay/poster4.jpg" alt="trend"/>
+				</div>
+				<div class="showoff hide-first">
+					<img src="img/giay/poster2.jpg" alt="trend"/>
+				</div>
+			</div>
+			<div class="SlideButton">
+				  <span class="dot" onClick="currentSlide(0)"></span> 
+				  <span class="dot" onClick="currentSlide(1)"></span> 
+				  <span class="dot" onClick="currentSlide(2)"></span>
+				  <span class="dot" onClick="currentSlide(3)"></span>
+			</div>
+     </div>
+     
+        <marquee  behavior="slide" direction="down" scrollamount="4" loop="-1" width="100%"><h1 align="center">TRÀ SỮA</h1></marquee>
+      <marquee id="marq" scrollamount="60" direction="right" loop="-1" behavior="slide"  >
+        
+    <a href="#"><img src="/img/giay/giay1.jpg"title="giay1" /> </a>
+    <a href="#"><img src="img/giay/giay2.jpg" title="giay2" /> </a>
+    <a href="#"><img src="img/giay/giay3.jpg" title="giay3"/> </a>
+       </marquee>
+       
+      <marquee  behavior="slide" direction="down" scrollamount="4" loop="-1"  width=”100%”><h1 align="center">BÁNH NGỌT</h1></marquee>
+       
+      <marquee id="marq" scrollamount="60" direction="right" loop="-1" behavior="slide" >
+        
+    <a href="#"><img src="img/giay/giay4.jpg" title="giay4"/> </a>
+    <a href="#"><img src="img/giay/giay5.jpg" title="giay5"/> </a>
+    <a href="#"><img src="img/giay/giay6.jpg" title="giay6" /> </a>
+       </marquee>
+       
+      <marquee  behavior="slide" direction="down" scrollamount="4" loop="-1" width="100%"><h1 align="center">THỨC UỐNG ĐẶC BIỆT</h1></marquee>
+      <marquee id="marq" scrollamount="60" direction="right" loop="-1" behavior="slide" >
+        
+    <a href="#"><img src="img/dacbiet/macha.png" title="nước ép" /> </a>
+    <a href="#"><img src="img/dacbiet/imgpsh_fullsize.png" title="thức uống đặc biệt"/> </a>
+    <a href="#"><img src="img/dacbiet/xoai.png" title="nước ép"/> </a>
+       </marquee>
+       
+    
+        <script>	
+	var header = document.querySelector('.menu');
+	var origOffsetY = header.offsetTop;
+
+	function onScroll(e) {
+	  window.scrollY >= 100 ? header.classList.add('collapse') :
+	                          header.classList.remove('collapse');
+	}
+
+	document.addEventListener('scroll', onScroll);
+	</script>
+      
+     <!-- footer-->
+     <div id="footter">
+         <button onClick="topFunction()" id="mytnt" title="Go to top">Top</button>
+             <div class="F-left tfoot">
+                 <ul>
+                       <li><a href="#">  -- TRÀ SỮA WEICHIEN --</a> </li>
+                       <li><img src="img/if_location-24_103179.png"/><a href="#"> 423 Nguyễn Văn Công,P.3,Q.Gò Vấp,Tp.HC</a></li>
+                       <li><img src="img/if_icon-ios7-telephone_211830 (1).png"/><a href="#"> 01685367320</a></li>
+                       <li><img src="img/if_aiga_mail_134146.png"/><a href="#"> trasuaweichien@gmail.com</a></li>
+                  </ul>
+             </div>
+             <div class="F-right tfoot">
+                 <ul>
+                     <li><a href="trangchu.html"> Trang chủ</a></li>
+                     <li><a href="#"> Menu</a></li>
+                     <li><a href="lienhe.html">Liên hệ</a></li>
+                     <li><a href="gioithieu.html"> Giới thiệu</a></li>
+                    </ul>
+             </div>
+             <div class="web">
+                 <ul>
+                     <li><img src="img/if_01_111032.png" title="facebook"/></li>
+                     <li><img src="img/if_video-youtube_326601.png" title="youtube"/></li>
+                     <li><img src="img/if_40-google-plus_843777.png" title="google+"/></li>
+                     <li><img src="img/if_38-instagram_1161953.png" title="instagram"/></li>
+                 </ul>
+             </div>
+      </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+div.noidung{
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FC0;
+	size:50px;
+
+}
+div.nd{
+	font-family:Verdana, Geneva, sans-serif;
+
+}
+/* BACKGROUND*/
+	div.contener{
+		background-image:url(../img/656961794-1024x1024.jpg);
+		overflow:hidden;
+		height: 590px;
+		display:block;
+	}
+	
+	div >img{
+		width:100%;	
+		padding:20px 0px;
+		float:left;
+		margin:-20px;
+	}
+
+/* LOGO*/
+	div.logo > img{
+		padding:150px 0px 0px 300px;
+		
+		float:left;
+		width:700px;
+	}
+/* THANH HEADER*/
+	div.menu >ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		position:fixder;
+	}
+
+/*TẠO MENU*/
+	div.menu >ul >li{
+		float:left;
+		
+	}
+	
+	div.menu >ul >li >a{
+		display:block;
+		padding:30px 50px;
+		text-align:center;
+		text-transform:uppercase;
+		font-family:Arial, Helvetica, sans-serif;	
+		text-decoration:none;	
+		color:#000;
+	}
+	
+	div.menu >ul > li:first-child{
+		padding:0px 0px 0px 100px;
+	}
+	
+	div.menu >ul >li >a:hover{
+		color:#FFF;
+	}
+	
+	div.menu >ul > li:last-child{
+		float:right;
+	}
+
+/* SUB-MENU*/
+	ul > li.submenu ul.subcontent {
+		visibility:hidden;
+		/*position:absolute;*/
+		opacity:0;
+		width: 300px;
+		transition:opacity 6%, visibility 40ms;
+	}
+	
+	
+	ul.subcontent > li {
+		background-color:#FC3;	
+		list-style-type:none;
+	}
+	
+	ul.subcontent > li > a {
+		color:#FFF;
+		text-decoration:none;
+		display:block;
+		
+		
+	}
+	
+	ul.subcontent > li > a:hover{
+		color:#000;
+		padding: 0;
+	}
+
+	ul > li.submenu:hover ul.subcontent {
+		opacity: .96;
+		visibility:visible;
+	}
+	
+/* SEARCH */
+	div.menu >pt {
+	
+		padding:100px ;
+	}
+	/* YELLOW HEADER */
+	.menu {
+		width: 100%;
+		height: 100px;
+		background: #FC0;
+		position:fixed;
+		top: 0;
+		transition-duration: .3s;
+		z-index:2;
+			}
+			
+	.collapse {
+		height: 50px !important;
+			}
+	
+/* TEXT HEADER */
+	.menu li {		
+		height: 40px;
+		transition-duration: .3s;
+		font-size:30px;
+			}		
+	
+	.collapse li {
+		line-height: 0px !important;
+		font-size: 20px;
+			}
+
+/* SUB-MENU */
+	
+	.collapse ul > li.submenu ul.subcontent {
+		position:fixed;
+		top: 50px;
+		width: 250px;
+		}
+			
+/* SUB-MENU_TEXT */
+	.subcontent li {
+		font-size: 25px ;
+		padding: 10px 0px 0px 20px ;
+		}
+		
+	.collapse ul.subcontent > li {
+		font-size: 20px;
+		width: 200px;
+		padding: 0px 0px 0px 20px ;
+		}
+		
+	.collapse ul.subcontent > li > a:first-child{
+		padding-top: 20px;
+		}
+
+/* SEARCH */
+	.search {
+		position:fixed !important;
+		top: 25px !important;
+		right: 32px;
+		}
+				
+	.collapse search {
+		position:fixed !important;
+		top: 20px !important;
+		}
+		/* nut top*/
+#mytnt{
+	display:none;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	z-index:99;/* đảm bảo không nằm chồng lên nhau*/
+	border:1px solid black groove;
+	outline:none;
+	background-color:#F90;
+	font-family:"Courier New", Courier, monospace;
+	color:#000;
+	cursor:pointer;
+	padding:15px;
+	border-radius:60%;
+	font-size:18px;
+}
+#mytnt:hover{
+	background-color:#000;
+	color:#FC0;
+}
+
+/* CHẠY ẢNH*/
+div.slideshow-container {
+  /* max-width: 500px;*/
+   position:relative;
+   margin:0;
+	padding-left: 130px;
+	
+	
+}
+div.showoff > img{
+	padding-top: 40px;
+	padding-bottom: 60px;
+	width: 1100px;
+	height: 500px;
+	  position:relative;	
+}
+span.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10s ease;
+}
+.dot:hover {
+  background-color: #717171;
+}
+.showoff {
+  /*-webkit-animation-name: mymove; /*Hỗ trợ cho GG Chorme và Safari*/
+  /*-webkit-animation-duration: 8s;*/
+  animation-name: mymove;/*tên animation*/
+  animation-duration:8s;/*thời gian*/
+  animation-iteration-count: infinite;/*chuyển động lặp vô hạn*/
+	
+}
+.showoff.hide-first{
+	display:none;
+} 
+@keyframes mymove {
+  from{opacity:0.8} 
+  to{opacity:1.4}
+}
+/*advertisement- đưa button đè lên quảng cáo*/
+div.advertisement{
+	position: relative;
+	margin: 30px;
+	
+}
+ /*CHỈNH NÚT TRÒN TRÊN ẢNH*/
+div.SlideButton{
+	position:absolute;
+	left:580px;
+	top:480px;
+}
+/* nut top*/
+#mytnt{
+	display:none;
+	position:fixed;
+	bottom:20px;
+	right:30px;
+	z-index:99;/* đảm bảo không nằm chồng lên nhau*/
+	border:1px solid black groove;
+	outline:none;
+	background-color:#F90;
+	font-family:"Courier New", Courier, monospace;
+	color:#000;
+	cursor:pointer;
+	padding:15px;
+	border-radius:60%;
+	font-size:18px;
+}
+#mytnt:hover{
+	background-color:#000;
+	color:#FC0;
+}
+/* foodter*/
+#footter{
+	background-color:#333;
+	width:100%;
+	color:#CCC;
+	height:350px;
+}
+div.F-left{
+	padding:20px 200px 50px 60px;
+	display:block;
+	float:left;
+}
+div.tfoot >ul >li >a:hover{
+	color:#F90;
+}
+div.F-right{
+	padding:20px;
+}
+div.tfoot >ul >li{
+	padding: 10px;
+	list-style-type:none;
+}
+div.tfoot >ul >li >a{
+	color:#CCC;
+	text-decoration:none;
+}
+div.web >ul{
+	padding:40px 505px;
+}
+div.web >ul>li{
+	list-style-type:none;
+	float:left;
+	padding:20px;
+}
+div.web >ul >li >img:hover{
+   background-color:#666;
+   cursor:pointer;
+}
+#marq >a>img{
+	padding: 30px 68px 30px 68px ;
+	width: 250px;
+	height:250px;
+	border-radius:25%;
+}
+img{
+	z-index:1;
+	
+}
+
+
+
+
+
+
+
+
