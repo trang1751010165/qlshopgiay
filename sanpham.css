@@ -1,0 +1,51 @@
+
+.page-link {
+width: 40px;
+margin: 30px 0 50px 620px;
+
+}
+.page-link:hover {
+    background-color: rgb(122, 122, 201) ;
+}
+/* nav */
+.nav-link{
+	color: white !important;
+}
+
+.nav-link:hover{
+	color: yellow !important; 
+}
+.dropdown-item:hover {
+	color: rgb(202, 202, 39) !important;
+}
+
+
+#footter{
+	background-color:#333;
+	width:100%;
+	color:#CCC;
+	height:350px;
+}
+#footter img {
+	height: 25px;
+	width: 25px;
+}
+div.F-left{
+	padding:20px 200px 50px 60px;
+	display:block;
+	float:left;
+}
+div.tfoot >ul >li >a:hover{
+	color:#F90;
+}
+div.F-right{
+	padding:20px;
+}
+div.tfoot >ul >li{
+	padding: 10px;
+	list-style-type:none;
+}
+div.tfoot >ul >li >a{
+	color:#CCC;
+	text-decoration:none;
+}
