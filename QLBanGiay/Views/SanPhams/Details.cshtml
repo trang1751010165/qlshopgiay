@@ -1,0 +1,68 @@
+﻿@model QLBanGiay.Models.SanPham
+@using QLBanGiay.Models
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Chi Tiết Sản Phẩm</h2>
+
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Tên sản phẩm")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Đơn vị tính")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donvitinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Đơn giá")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dongia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HinhSP)
+        </dt>
+
+        <dd>
+            @Html.Image("../../" + @Model.HinhSP, @Model.HinhSP, "100");
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Loại sản phẩm")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoaiSP.TenLoaiSP)
+        </dd>
+
+        <dt>
+
+        </dt>
+
+        <dd>
+            <a class="btn btn-success btn-sm" href="@Url.Action("AddToCart" , "GioHang", new { MaSP = @Model.MaSP})">
+                <span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng
+            </a>
+            <a class="btn btn-success btn-sm" href="@Url.Action("Index", "Home", new { MaSP = @Model.MaSP})">
+                Quay lại
+            </a>
+        </dd>
+
+    </dl>
+</div>
